@@ -458,7 +458,7 @@ declare module "zookeeperConstants" {
     export var on_event_child: string;
     export var on_event_notwatching: string;
 }
-declare module "zookeeper" {
+declare module "@ian-patches/zookeeper" {
     export = ZooKeeperPromise;
     const ZooKeeperPromise_base: typeof import("zookeeperWithCallbacks");
     /**
@@ -621,7 +621,7 @@ declare module "zookeeper" {
 }
 declare module "index" {
     export = ZooKeeper;
-    const ZooKeeper: typeof import("zookeeper");
+    const ZooKeeper: typeof import("@ian-patches/zookeeper");
 }
 /**
  * ACL object
